@@ -1,0 +1,204 @@
+/* CSS BROWSER RESET - for more control over page styles accross multiple browsers ================= */
+html, body, main, h1, h2, h3, h4, h5, h6, p, blockquote, 
+a, button, em, img, strong, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, textarea, select,
+article, aside, footer, header, nav, section, time,
+::before, ::after {
+	box-sizing: border-box;
+	margin: 0; 
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/* HTML5 - Older browser support for new HTML5 tags =================== */
+article, aside, figcaption, figure, footer, header, menu, nav, section {
+	display: block;
+}
+/*Background Image & General layout Styles==================*/
+body {
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;      
+  background: url("https://cdn.pixabay.com/photo/2016/08/31/17/02/blue-1634110_1280.png") center fixed;/* <-----repeats a small pattern-imeage on the x and y axis */
+}
+header {
+  width: 600px;
+  height: auto;
+  margin: 10px auto;
+}
+header li {
+  display: block; 
+  list-styles:none;
+  text-align:center;
+}
+header img{
+  width:140px;
+  height:140px;
+  border:5px solid #0071c2;
+  border-radius: 50%;/*<-------By setting the radius of each corner to 50%, the <img> tag inside the <header> will be styled as a circle */
+  transition:all 0.7s ease;
+}
+
+header img:hover {
+  color:green;
+  border-color:green;
+  cursor:pointer;
+}
+
+h1{
+  text-align:center;
+  color:#fff;
+  font-family:Helvetica, arial, sans-serif; 
+  font-size:4rem;
+  margin:0px auto;
+  letter-spacing:-1px;
+  font-weight:bold;
+  text-shadow:5px 5px 0px rgba(0,0,0,0.3);
+}
+
+h1 strong {
+  color:#0071c2;
+}
+
+h2 {
+  text-align:center;
+  color:#fff;
+  font-family:Helvetica, arial, sans-serif; 
+  font-size:3rem;
+  padding:20px;
+  margin:0px auto;
+  letter-spacing:-1px;
+  font-weight:bold;
+}
+
+h2 strong {
+  color:#0071c2;
+}
+
+header:after{
+  
+}
+/*<article> tag holding all out content together=========*/
+article{
+  width:85%;
+  margin:20px auto;
+  position: relative;
+  background: rgba(56,56,56,0.75);
+  padding:30px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img-col {
+    flex-basis: 190%;
+}
+
+.img1{
+  border-radius:15%;
+  border:5px solid #0071c2;
+}
+
+.text-col {
+  color:#b7d9f7;
+  font-size:20px;
+  padding:40px;
+}
+
+.text {
+  font-weight:700;
+}
+
+.skill-list{
+  font-size:20px;
+  font-family:'Montserrat', sans-serif;
+  color:#b7d9f7;
+  margin:0 48%;
+}
+
+/*====form section=====*/
+#contact-form{
+  font-family:'Montserrat', sans-serif;
+  font-size:16px;
+  margin:30px;
+  padding:0 10%;
+}
+
+.form{
+  font-family:'Montserrat', sans-serif;
+  font-size:20px;
+  color:#b7d9f7;
+  padding:40px;
+  margin:0 30%;
+}
+
+input, select, textarea {
+  background-color:#b7d9f7;
+  width:400px;
+  margin:5px 10px 10px 0;
+  padding: 20px;
+  border: 5px solid #0071c2;
+  border-radius: 20%;
+  box-sizing: border-box;
+  resize: vertical
+}
+
+.btn {
+  background-color:#b7d9f7;
+  width:200px;
+  padding:20px;
+  margin:10px 30%;
+  border-radius:45%;
+  border:5px solid #0071c2;
+  transition:all 0.7s ease;
+}
+.btn:hover {
+  color:green;
+  border-color:green;
+  cursor:pointer;
+}
+
+/*====Social Media Section=====*/
+.icons ul li {
+  display:inline-block;
+  margin:0 10px;
+  cursor:pointer;
+}
+
+.icons ul {
+  display:flex;
+  justify-content:center;
+}
+
+.icons ul li a {
+  font-size:40px;
+  color:#fff;
+  transition:0.7s ease;
+}
+
+.icons ul li a:hover {
+  color:#0071c2;
+}
+/*====<footer> & Copright Styles=====*/
+footer { 
+  text-align:center;
+}
+footer p{
+  font-size:1rem;
+  color:#fff;
+  text-align:center;
+  display:block;
+}
+    
